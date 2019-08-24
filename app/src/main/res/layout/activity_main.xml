@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:text="CHOOSE A SENSOR"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="12pt"
+        android:layout_gravity="center_horizontal"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/mybutton"
+            android:text="Accelerometer Sensor"
+            android:id="@+id/b1"
+            android:onClick="newActivity1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:id="@+id/t1"
+            android:gravity="center"
+            android:text="Status, Info"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/b2"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:background="@drawable/mybutton"
+            android:onClick="newActivity2"
+            android:text="Light Sensor"
+            android:layout_below="@+id/b1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:id="@+id/t2"
+            android:gravity="center"
+            android:text="Status, Info"/>
+    </LinearLayout>
+
+
+</LinearLayout>
